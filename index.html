@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>انتخاب طرح برقتو</title>
+  <meta name="description" content="پیش‌نمایش طرح‌های ۳ تا ۹ وب‌سایت برقتو">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f4f5f1;--ink:#171a17;--muted:#747974;--line:#dfe2dc;--green:#197348;--card:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,system-ui,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1320px,calc(100% - 40px));margin:auto}
+    header{padding:68px 0 38px;text-align:center}
+    .logo{display:inline-flex;align-items:center;gap:10px;font-size:18px;font-weight:900;margin-bottom:28px}
+    .logo i{display:grid;place-items:center;width:40px;height:40px;border-radius:12px;background:#172019;color:#d9ff66;font-style:normal}
+    h1{font-size:clamp(42px,6vw,76px);line-height:1.08;letter-spacing:-3px;margin:0}
+    header p{max-width:650px;margin:20px auto 0;color:var(--muted);font-size:17px;line-height:1.9}
+    .notice{display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:8px 13px;background:#e6f3eb;color:#17643f;border-radius:999px;font-size:12px;font-weight:700}
+    .notice:before{content:"";width:7px;height:7px;border-radius:50%;background:#32b26f;box-shadow:0 0 0 5px rgba(50,178,111,.13)}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding:24px 0 80px}
+    .card{display:block;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.25s;box-shadow:0 8px 28px rgba(20,28,22,.05)}
+    .card:hover{transform:translateY(-7px);box-shadow:0 24px 55px rgba(20,28,22,.13);border-color:#9db5a4}
+    .preview{position:relative;aspect-ratio:16/10;background:#e9ece7;overflow:hidden;border-bottom:1px solid var(--line)}
+    .preview iframe{position:absolute;inset:0;width:400%;height:400%;border:0;transform:scale(.25);transform-origin:top left;pointer-events:none;background:#fff}
+    .live{position:absolute;z-index:3;top:12px;right:12px;display:flex;align-items:center;gap:6px;background:rgba(15,18,15,.86);color:#fff;border-radius:9px;padding:6px 9px;font-size:10px;font-weight:700;backdrop-filter:blur(9px)}
+    .live:before{content:"";width:6px;height:6px;border-radius:50%;background:#55e090}
+    .open{position:absolute;z-index:3;left:12px;bottom:12px;width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.9);display:grid;place-items:center;font-size:20px;box-shadow:0 5px 20px rgba(0,0,0,.15);opacity:0;transform:translateY(5px);transition:.25s}
+    .card:hover .open{opacity:1;transform:none}
+    .info{padding:18px 19px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .info h2{font-size:20px;margin:0 0 4px}
+    .info p{font-size:13px;color:var(--muted);margin:0}
+    .number{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:#f0f2ed;color:#596059;font-size:13px;font-weight:900}
+    footer{border-top:1px solid var(--line);padding:25px 0 40px;color:var(--muted);font-size:13px;text-align:center}
+    @keyframes pulse{50%{box-shadow:0 0 0 6px rgba(85,224,144,.15)}}
+    @media(max-width:980px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:640px){.wrap{width:min(100% - 22px,1320px)}header{padding-top:45px}h1{font-size:42px;letter-spacing:-2px}.grid{grid-template-columns:1fr;gap:15px;padding-top:10px}.open{opacity:1;transform:none}.info h2{font-size:18px}}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <div class="logo"><i>☀</i> برقتو</div>
+    <h1>یکی از طرح‌ها را انتخاب کنید</h1>
+    <p>پیش‌نمایش زنده‌ی طرح‌های ۳ تا ۹ در اختیار شماست. برای مشاهده کامل هر سایت، روی کارت آن کلیک کنید.</p>
+    <div class="notice">با کلیک، سایت در صفحه‌ای جدا باز می‌شود</div>
+  </header>
+
+  <main class="wrap grid">
+    <a class="card" href="https://babakbinesh23.github.io/tarh-3/" target="_blank" rel="noopener">
+      <div class="preview"><iframe src="https://babakbinesh23.github.io/tarh-3/" title="پیش‌نمایش زنده طرح ۳" loading="eager"></iframe><span class="live">پیش‌نمایش زنده</span><span class="open">↗</span></div>
+      <div class="info"><div><h2>طرح ۳</h2><p>نسخه بازطراحی‌شده EnergySage</p></div><span class="number">03</span></div>
+    </a>
+
+    <a class="card" href="https://babakbinesh23.github.io/tarh-4/" target="_blank" rel="noopener">
+      <div class="preview"><iframe src="https://babakbinesh23.github.io/tarh-4/" title="پیش‌نمایش زنده طرح ۴" loading="eager"></iframe><span class="live">پیش‌نمایش زنده</span><span class="open">↗</span></div>
+      <div class="info"><div><h2>طرح ۴</h2><p>شبکه خورشیدی آینده</p></div><span class="number">04</span></div>
+    </a>
+
+    <a class="card" href="https://babakbinesh23.github.io/tarh-5/" target="_blank" rel="noopener">
+      <div class="preview"><iframe src="https://babakbinesh23.github.io/tarh-5/" title="پیش‌نمایش زنده طرح ۵" loading="eager"></iframe><span class="live">پیش‌نمایش زنده</span><span class="open">↗</span></div>
+      <div class="info"><div><h2>طرح ۵</h2><p>انرژی ساده و روشن</p></div><span class="number">05</span></div>
+    </a>
+
+    <a class="card" href="https://babakbinesh23.github.io/tarh-6/" target="_blank" rel="noopener">
+      <div class="preview"><iframe src="https://babakbinesh23.github.io/tarh-6/" title="پیش‌نمایش زنده طرح ۶" loading="lazy"></iframe><span class="live">پیش‌نمایش زنده</span><span class="open">↗</span></div>
+      <div class="info"><div><h2>طرح ۶</h2><p>انرژی بی‌وقفه — نئوبروتالیسم</p></div><span class="number">06</span></div>
+    </a>
+
+    <a class="card" href="https://babakbinesh23.github.io/tarh-7/" target="_blank" rel="noopener">
+      <div class="preview"><iframe src="https://babakbinesh23.github.io/tarh-7/" title="پیش‌نمایش زنده طرح ۷" loading="lazy"></iframe><span class="live">پیش‌نمایش زنده</span><span class="open">↗</span></div>
+      <div class="info"><div><h2>طرح ۷</h2><p>انرژی روشن، درآمد ماندگار</p></div><span class="number">07</span></div>
+    </a>
+
+    <a class="card" href="https://babakbinesh23.github.io/tarh-8/" target="_blank" rel="noopener">
+      <div class="preview"><iframe src="https://babakbinesh23.github.io/tarh-8/" title="پیش‌نمایش زنده طرح ۸" loading="lazy"></iframe><span class="live">پیش‌نمایش زنده</span><span class="open">↗</span></div>
+      <div class="info"><div><h2>طرح ۸</h2><p>اتاق فرمان خورشیدی</p></div><span class="number">08</span></div>
+    </a>
+
+    <a class="card" href="https://babakbinesh23.github.io/tarh-9/" target="_blank" rel="noopener">
+      <div class="preview"><iframe src="https://babakbinesh23.github.io/tarh-9/" title="پیش‌نمایش زنده طرح ۹" loading="lazy"></iframe><span class="live">پیش‌نمایش زنده</span><span class="open">↗</span></div>
+      <div class="info"><div><h2>طرح ۹</h2><p>جریان زنده انرژی</p></div><span class="number">09</span></div>
+    </a>
+  </main>
+
+  <footer><div class="wrap">برقتو — مجموعه طرح‌های پیشنهادی وب‌سایت</div></footer>
+</body>
+</html>
