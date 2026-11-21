@@ -23,6 +23,11 @@
 - فونت فارسی Vazirmatn از Google Fonts
 - کارت‌های طرح به نشانی‌های GitHub Pages هر مخزن اشاره می‌کنند. **فعال‌بودن GitHub Pages در هر مخزن باید جداگانه بررسی شود.**
 
+
+## پیش‌نمایش آنلاین / Live demo
+
+**[اجرای آنلاین barghto-design-showcase](https://babakbinesh23.github.io/barghto-design-showcase/)** — صفحه GitHub Pages در بررسی ۲۱ نوامبر ۲۰۲۶ باز شد. تست کامل تعاملات و ثبت واقعی فرم‌ها جزو این تأیید نیست.
+
 ## پیش‌نمایش محلی
 
 ```bash
